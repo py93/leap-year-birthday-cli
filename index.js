@@ -28,7 +28,7 @@ function checkDateLeapYear(year)
 {
   if(((year%4) === 0) && ((year%100 != 0) || (year%400 === 0)))
   {
-    console.log(chalk.bold.cyan("\nYou ARE born in leap year! "));
+    console.log(chalk.bold.cyan("\nYou ARE born in leap year! Share this on your social media! "));
   }
   else 
   {
