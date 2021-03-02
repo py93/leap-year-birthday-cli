@@ -1,16 +1,16 @@
-var readLineSync = require('readline-sync');
-var chalk = require('chalk');
+const readLineSync = require('readline-sync');
+const chalk = require('chalk');
 
-var userName = readLineSync.question(chalk.green("Please enter your name: "));
+const userName = readLineSync.question(chalk.green("Please enter your name: "));
 
 console.log(chalk.blue("\nWelcome, ", userName));
 
-var userDOB = readLineSync.question(chalk.yellow.underline("\nPlease enter your DOB in format DD/MM/YYYY: "));
+const userDOB = readLineSync.question(chalk.yellow.underline("\nPlease enter your DOB in format DD/MM/YYYY: "));
 
 
-var userDD = "";
-var userMM = "";
-var userYYYY = "";
+let userDD = "";
+let userMM = "";
+let userYYYY = "";
 function validateDate(userDOB)
 {
   userDD = parseInt(userDOB.substring(1,3));
